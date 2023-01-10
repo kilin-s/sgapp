@@ -1,10 +1,9 @@
 FROM alpine:3.17.1
 
 
-RUN useradd app && \
-    mkdir -p /app && \
+RUN addgroup -S app && adduser -S app -G app
 
-USER starter
+USER app
 
 COPY --chown=app --from=builder main /main
 
