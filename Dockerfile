@@ -5,5 +5,5 @@ RUN addgroup -S app && adduser -S app -G app
 
 USER app
 
-COPY --chown=app --from=builder main /main
+COPY --chown=app main /main
 
