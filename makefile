@@ -1,4 +1,4 @@
-BINARY_NAME=main.out
+BINARY_NAME=main
 
 build:
 	go build -o ${BINARY_NAME} main.go
